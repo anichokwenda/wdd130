@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #B1DDF1;
+    /*uranian blue*/
+    --secondary_color: #9F87AF;
+    /*african violet*/
+    --accent1-color: #614344;
+    /*rose ebony*/
+    --accent2-color: #88527F;
+    /*plum*/
+    --heading-font: "Gloria Hallelujah", sans-serif;
+    --body-font: "Ancizar", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
