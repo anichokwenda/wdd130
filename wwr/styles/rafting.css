@@ -11,10 +11,6 @@
     --body-font: "Ancizar", sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
 
 * {
     margin: 0;
@@ -34,10 +30,61 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    grid-template-columns: repeat(87, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    border: 2px solid var(--accent2-color);
+    border-radius: 3px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    height: 8rem;
+}
+
+#logo-header {
+    grid-column: 14/ span 10;
+    grid-row: 3/-3;
+    border: 2px solid var(--accent2-color);
+    border-radius: 25%;
+    ;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+nav {
+    grid-column: 32/-5;
+    grid-row: 6/span 4;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+nav a {
+    flex: 1 1 0px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--accent3-color);
+
+    color: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 3px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -48,6 +95,144 @@ article {
     padding: 8px;
 }
 
+/* main formatting */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+article {
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    width: 80%;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    clear: left;
+}
+
+.hero article img {
+    float: right;
+    margin: 2px;
+    width: 20%;
+    height: auto;
+    opacity: 1;
+}
+
+/* History Formatting */
+
+#history {
+    background-color: var(--accent1-color);
+
+    border: 2px solid var(--accent2-color);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+#logo-history {
+    width: auto;
+    height: 100%;
+    border: 2px solid var(--accent2-color);
+    border-radius: 25%;
+    ;
+}
+
+/* Adventure awaits styling */
+
+#adventure-awaits {
+    background-color: var(--accent1-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#adventure-examples {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+#adventure-examples figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 0.8rem;
+}
+
+#adventure-examples figure img {
+    width: 80%;
+    margin: 0.5rem;
+    height: 100%;
+
+    border: 2px solid var(--accent2-color);
+    border-radius: 25%;
+    ;
+}
+
+/*footer stylings  */
+
+footer {
+    background-color: var(--accent1-color);
+    border: 2px solid var(--accent2-color);
+    border-radius: 3%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
 .socialmedia a {
     text-decoration: none;
+}
+
+.socialmedia a img {
+    width: 20px;
+    ;
+    height: auto;
+    margin: 0.5rem;
 }
