@@ -206,6 +206,10 @@ article {
 
 footer {
     background-color: var(--accent1-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
     border: 2px solid var(--accent2-color);
     border-radius: 3%;
 
@@ -216,6 +220,7 @@ footer {
 
 footer p {
     font-size: 0.75rem;
+    margin-bottom: 10px;
 }
 
 .socialmedia {
