@@ -161,7 +161,7 @@ article {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50, -50%);
+    transform: translate(-50, -50% 0);
     color: #fff;
     text-align: center;
 }
@@ -428,13 +428,6 @@ main {
 
 .box h2 {
     text-align: center;
-}
-
-.box:nth-child(1) {
-    background-image: linear-gradient(to bottom, #333 2px, solid 2px);
-    background-size: 100% 2px;
-    background-position: 0 0, 0 100%;
-    background-repeat: no-repeat;
 }
 
 .company-content {
