@@ -7,7 +7,7 @@
     /*rose ebony*/
     --accent2-color: #88527F;
     /*plum*/
-    --heading-font: "Gloria Hallelujah", cursive;
+    --heading-font: "Gloria Hallelujah", sans-serif;
     --body-font: "Ancizar Serif", serif;
 }
 
@@ -20,7 +20,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #333;
 }
 
 header,
@@ -42,7 +42,7 @@ header {
     padding: 10px;
     grid-template-columns: repeat(87, 1fr);
     grid-template-rows: repeat(14, 1fr);
-    border: 2px solid var(--accent2-color);
+    border: 2px solid black;
     border-radius: 3px;
     background-color: var(--accent1-color);
     color: var(--primary-color);
@@ -75,7 +75,7 @@ header nav ul {
 
 header nav a {
     text-decoration: none;
-    color: var(--secondary_color);
+    color: #fff;
 }
 
 header nav li {
@@ -112,7 +112,7 @@ nav a {
     text-decoration: none;
     background-color: var(--accent3-color);
     color: var(--secondary-color);
-    border: 2px solid var(--accent2-color);
+    border: 2px solid black;
     border-radius: 3px;
     line-height: 70px;
 }
@@ -128,7 +128,7 @@ nav ul {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary_color);
+    color: #333;
 }
 
 nav,
@@ -363,7 +363,7 @@ figcaption {
     margin-top: 10px;
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--accent1-color);
+    color: #333;
     border-radius: 0 0 10px 10px;
 
 }
