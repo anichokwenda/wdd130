@@ -608,3 +608,7 @@ button {
 button:hover {
     background-color: darkgreen;
 }
+
+.map-iframe {
+    border: 0;
+}
